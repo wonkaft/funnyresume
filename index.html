@@ -7,6 +7,18 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader">
+      <!-- Camera icon as inline SVG -->
+      <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"></path>
+        <circle cx="12" cy="13" r="4"></circle>
+      </svg>
+    </div>
+  </div>
+  <!-- End Preloader -->
+
   <header>
     <nav>
       <ul class="nav-list">
@@ -27,8 +39,20 @@
   <footer>
     <p>&copy; 2025 Faber Photography</p>
   </footer>
+
+  <script>
+    // When the window loads, fade out the preloader smoothly.
+    window.addEventListener("load", function() {
+      const preloader = document.getElementById('preloader');
+      preloader.classList.add('hidden');
+      setTimeout(() => {
+        preloader.style.display = 'none';
+      }, 1000); // Delay matches the CSS transition duration
+    });
+  </script>
 </body>
 </html>
+
 
 
 
