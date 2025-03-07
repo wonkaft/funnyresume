@@ -126,48 +126,5 @@ footer {
     flex-direction: column;
     align-items: center;
   }
-  /* Preloader Styles */
-#preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-  transition: opacity 1s ease, visibility 1s ease;
 }
 
-#preloader.hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader {
-  animation: spin 2s linear infinite;
-}
-
-/* Keyframe for rotating the camera icon */
-@keyframes spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
-}
-
-/* Example: smooth fade-in for main content (optional) */
-body {
-  opacity: 0;
-  animation: fadeIn 1s forwards;
-}
-
-@keyframes fadeIn {
-  to { opacity: 1; }
-}
-
-}
