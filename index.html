@@ -2,37 +2,170 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Faber Photography - Home</title>
-  <link rel="stylesheet" href="styles.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Caden Carr - Resume</title>
+  <!-- Montserrat Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #013220; /* Dark green background */
+      color: #f0f0f0;
+      line-height: 1.6;
+    }
+    a {
+      color: #9ACD32;
+      text-decoration: none;
+      transition: color 0.3s ease-in-out;
+    }
+    a:hover {
+      color: #cde986;
+    }
+    header {
+      background: rgba(0, 0, 0, 0.5);
+      padding: 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+    }
+    nav li {
+      margin: 0 15px;
+    }
+    .container {
+      max-width: 1000px;
+      margin: 20px auto;
+      padding: 20px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+      animation: fadeIn 1.5s ease-in-out;
+    }
+    h1, h2, h3 {
+      margin-top: 0;
+      color: #cde986;
+    }
+    .section {
+      margin-bottom: 40px;
+    }
+    .section h2 {
+      border-bottom: 2px solid #9ACD32;
+      padding-bottom: 5px;
+    }
+    .experience-item, .education-item {
+      margin-bottom: 20px;
+    }
+    /* Fade in animation */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    /* Hover scale effect on container */
+    .container:hover {
+      transform: scale(1.01);
+      transition: transform 0.3s ease-in-out;
+    }
+  </style>
 </head>
 <body>
   <header>
+    <h1>Caden Carr</h1>
+    <p>CIS Student at Western Michigan University | President of BAIT</p>
     <nav>
-      <ul class="nav-list">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="https://7aszqk-cr.myshopify.com/collections/all" target="_blank" rel="noopener noreferrer">Pricing</a></li>       
-         <li><a href="contact.html">Contact Me</a></li>
-
+      <ul>
+        <li><a href="index.html">Work</a></li>
+        <li><a href="personal.html">Personal</a></li>
       </ul>
     </nav>
   </header>
-  <main>
-    <section class="home-content">
-      <h1>Faber Photography</h1>
-      <hr />
-      <p>Real estate photography by Tyson – capturing properties in their best light.</p>
+  <div class="container">
+    <!-- Contact Section -->
+    <section class="contact section">
+      <h2>Contact</h2>
+      <p>Email: <a href="mailto:caden.msu1@gmail.com">caden.msu1@gmail.com</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/caden-carr" target="_blank">www.linkedin.com/in/caden-carr</a></p>
     </section>
-  </main>
-  <footer>
-    <p>&copy; 2025 Faber Photography</p>
-  </footer>
+    <!-- Skills -->
+    <section class="skills section">
+      <h2>Top Skills</h2>
+      <p>Personal Development, Strategy, Social Entrepreneurship</p>
+    </section>
+    <!-- Languages -->
+    <section class="languages section">
+      <h2>Languages</h2>
+      <p>Spanish (Elementary)</p>
+    </section>
+    <!-- Certifications -->
+    <section class="certifications section">
+      <h2>Certifications</h2>
+      <ul>
+        <li>Level 1: PowerPoint White Belt</li>
+      </ul>
+    </section>
+    <!-- Summary -->
+    <section class="summary section">
+      <h2>Summary</h2>
+      <p>An eager and extroverted student looking to grow my knowledge in the technology field. My degree is in Computer Information Systems with an emphasis on project management and consulting. I am very involved with extracurriculars, such as being President of the student organization, Business Analytics and Information Technology (BAIT), and an active member of Bronco Cybersecurity Club.</p>
+      <p>In addition to my academic and leadership roles, I balance two professional positions—serving as a Student LAN Tech at WMUx and a Recruitment Ambassador at the Haworth College of Business—where I develop technical expertise and refine my ability to connect with diverse audiences.</p>
+      <p>My passion lies in building meaningful relationships to create impactful solutions. I am eager to explore internships, mentorship programs, and other opportunities that allow me to grow and contribute in the field of technology.</p>
+    </section>
+    <!-- Experience -->
+    <section class="experience section">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Western Michigan University - Student LAN Technician</h3>
+        <p>June 2024 - Present | Kalamazoo, Michigan, United States</p>
+      </div>
+      <div class="experience-item">
+        <h3>Western Michigan University - Haworth College of Business - Recruitment Ambassador</h3>
+        <p>January 2025 - Present | Kalamazoo, Michigan, United States</p>
+      </div>
+      <div class="experience-item">
+        <h3>Business Analytics and Information Technology (BAIT) - President</h3>
+        <p>April 2024 - Present | Kalamazoo, Michigan, United States</p>
+      </div>
+      <div class="experience-item">
+        <h3>DeHamer Landscaping - Landscaper</h3>
+        <p>June 2023 | Byron Center, Michigan, United States</p>
+      </div>
+      <div class="experience-item">
+        <h3>Van Andel Arena - Concessionaire</h3>
+        <p>January 2023 - March 2023 | Grand Rapids, Michigan, United States</p>
+      </div>
+      <div class="experience-item">
+        <h3>Walgreens - Customer Service Associate</h3>
+        <p>June 2021 - March 2023 | Jenison, Michigan, United States</p>
+      </div>
+      <div class="experience-item">
+        <h3>Target - Specialty Sales Representative</h3>
+        <p>November 2021 - December 2021 | Grandville, Michigan, United States</p>
+      </div>
+      <div class="experience-item">
+        <h3>Marco's Pizza (Marco's Franchising, LLC) - Insider</h3>
+        <p>March 2021 - May 2021 | Jenison, Michigan, United States</p>
+      </div>
+    </section>
+    <!-- Education -->
+    <section class="education section">
+      <h2>Education</h2>
+      <div class="education-item">
+        <h3>Western Michigan University - Haworth College of Business</h3>
+        <p>Bachelor of Business Administration (BBA), Computer Informational Systems | August 2023 - December 2026</p>
+      </div>
+      <div class="education-item">
+        <h3>Hudsonville High School</h3>
+        <p>August 2019 - June 2023</p>
+      </div>
+    </section>
+  </div>
 </body>
 </html>
-
-
-
-
-
